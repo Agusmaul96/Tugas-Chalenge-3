@@ -86,12 +86,12 @@
 	position:relative;
 	top:150px;
 }
-#progres ul.a {
+#progres ul.text-satu {
 	list-style-type:circle;
 	color:white;
 	list-style-type:unset;
 }
-#progres ul.b {
+#progres ul.text-dua {
 	list-style-type:circle;
 	color:white;
 }
