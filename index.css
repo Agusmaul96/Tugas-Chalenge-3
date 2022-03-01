@@ -5,15 +5,16 @@
 	background-size:cover;
 	background-position:center;
 	height:750px;
-}
-.container-sm {	
-	position:relative;
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 .navbar {
-	font-family:Bebas Neue;
+	font-family: Bebas Neue;
 	width:100%;
 	position:absolute;
+	z-index: 1;
 	top:0;
 	left:0;
 }
@@ -23,16 +24,13 @@
 .fw-light {
 	font-size:72px;
 	font-family:Arial;
-	weight:700px;
 	color:white;
-	margin-top:150px;
 	font-weight:bold;
 	font-style:normal;
 	line-height:64px;
-	margin-bottom:20px;
 }
 #teksgame1 {
-	font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+	font-family:Open Sans;
 	font-size:30px;
 	color:white;
 }
@@ -44,16 +42,18 @@
 	padding:10px 60px;
 	border-radius:5px;
 	position:relative;
-	top:30px;
 	background-color: orange;
 }
-
+section{
+	position: absolute;
+}
 .story {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: end;
-	padding: 9%;
+	position: absolute;
+    bottom: 0;
 }
 /* halaman2 */
 #halaman2 {
@@ -86,12 +86,12 @@
 	position:relative;
 	top:150px;
 }
-#progres ul.a {
+#progres ul.text-satu {
 	list-style-type:circle;
 	color:white;
 	list-style-type:unset;
 }
-#progres ul.b {
+#progres ul.text-dua {
 	list-style-type:circle;
 	color:white;
 }
@@ -271,13 +271,27 @@ footer {
 	font-weight: bold;
 	font-size: 15px;
 }
+
+/* sign up */
+#signup {
+	background-image: url(assets/the-games-bg.jpg);
+	background-size:cover;
+	background-position:center;
+	width: 100%;
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
 /* mobile version */
 @media (max-width:800px) {
 	.fw-light {
 		font-size:55px;
 		font-family:Arial;
 		color:white;
-		margin-top:120px;
 	}
 	.navbar-brand {
 		position:relative;
@@ -312,7 +326,6 @@ footer {
 	}
 	#halaman4 h1 {
 		font-size:40px;
-	
 	}
 	table {
 		margin-top:0;
@@ -370,3 +383,6 @@ footer {
 		#halaman4 h1 {
 			font-size: 30px;
 		}
+	}
+
+	
